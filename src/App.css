@@ -1,38 +1,409 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  text-decoration: none !important;
+  list-style-type: none !important;
+}
+
+
+@font-face {
+  font-family: 'recharge';
+  src: url(./assets/fonts/recharge-cufonfonts/recharge\ bd.ttf);
+}
+
+:root {
+  /* FONT-SIZE */
+  --fs-xsm: 16px;
+  --fs-sm: 18px;
+  --fs-xmd: 20px;
+  --fs-md: 24px;
+  --fs-lg: 32px;
+  --fs-xl: 40px;
+  --fs-2xl: 60px;
+
+  /* COLOR */
+  --prime-white: #ffffff;
+  --white-op7: #B7B8BA;
+  --white-op4: #6B7070;
+  --approx-black: #0B0A0A;
+  --sky-green: #02CDCF;
+  --black: #000000;
+  --gray99: #FCFCFC;
+
+
+}
+
+/* FONT CLASSES */
+.fs-xsm {
+  font-size: var(--fs-xsm);
+}
+
+.fs-sm {
+  font-size: var(--fs-sm);
+}
+
+.fs-xmd {
+  font-size: var(--fs-xmd);
+}
+
+.fs-md {
+  font-size: var(--fs-md);
+}
+
+.fs-lg {
+  font-size: var(--fs-lg);
+}
+
+.fs-xl {
+  font-size: var(--fs-xl);
+}
+
+.fs-2xl {
+  font-size: var(--fs-2xl);
+}
+
+/* COLOR CLASSE */
+.text_ffffff {
+  color: var(--prime-white);
+}
+
+.white-op7 {
+  color: var(--prime-white);
+}
+
+.approx-black {
+  color: var(--approx-black);
+}
+
+.text_black {
+  color: var(--black);
+}
+
+.sky-green {
+  color: var(--sky-green);
+}
+
+.bg_sky-green {
+  background-color: var(--sky-green);
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+.gray99 {
+  color: var(--gray99);
+}
+
+.ff-recharge {
+  font-family: recharge;
+}
+
+.ff-poppins {
+  font-family: poppins;
+
+}
+
+.preloader_img {
+  background-image: url(https://nexai.netlify.app/static/media/feature_gif4.e5afb62b806b4829f8fe.gif);
+  background-size: cover;
+  background-size: 100% 100%;
+}
+
+
+.Button_F {
+  color: var(--black, #0B0A0A);
+  font-family: Recharge;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  border-radius: 12px;
+  background: var(--green, #02CDCF);
+  display: inline-flex;
+  padding: 18px 32px;
+  align-items: flex-start;
+  gap: 10px;
+  border: none;
+}
+
+.Button_F:hover {
+  color: #02CDCF;
+  background: #0B0A0A;
+  /* filter: brightness(200%); */
+  box-shadow: 2px 2px 5px 5px #02CDCF;
+}
+
+.hero-heading {
+  color: var(--prime-white);
+  font-family: Recharge;
+  font-size: var(--fs-2xl);
+  font-style: normal;
+  font-weight: var(--fw-700);
+  line-height: 126%;
+}
+
+.footer-links {
+  color: var(--white-op7) !important;
+  text-align: center;
+  font-family: Recharge;
+  font-size: var(--fs-xsm);
+  font-style: normal;
+  font-weight: var(--fw-700);
+  line-height: normal;
+}
+
+.opacity {
+  opacity: 0.7;
+}
+
+.Hero_img {
+  background-image: url(https://stellar-elf-e551e7.netlify.app/assets/images/hero-bg-img.webp);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+
+.link {
+  position: relative;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #FFFFFF;
+  bottom: -5px;
+  transform: scaleX(0);
+  transition: all 400ms linear;
+}
+
+.link:hover::after {
+  transform: scaleX(1);
+}
+
+/* Blockchain-slider */
+
+.circle_right {
+  top: 0;
+  right: 0;
+}
+
+.circle_left{
+  top: -3%;
+  left: 0;
+}
+
+.bg_img_service {
+  background-image: url(./assets/image/png/service_img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.Access-box {
+  width: 364px;
+  height: 370px;
+  background: #FFF;
+}
+
+.slick-slider .slick-list {
+  overflow: visible;
+  padding: 0 20% 0 0;
+  position: relative;
+}
+
+.slick-slider .slick-list::after {
+  content: ' ';
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 4000px;
+  right: 100%;
+  background-color: black;
+}
+
+.Box-light {
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.02);
+  box-shadow: 0px 4px 20px 0px rgba(2, 205, 207, 0.16);
+  display: flex;
+  width: 340px;
+  height: 220px;
+  padding: 53px 43px;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*  nexai */
+.bg_nexai {
+  background-image: url(assets/image/png/AI_img_nexai.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.circle_right2{
+  top: 0;
+  right: -3.5%;
+}
+
+/* Home_Start */
+
+.bg-black {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
+}
+
+/* Home_End */
+
+/* time_line_Hand */
+
+.Height-over {
+  height: 440px;
+}
+
+.Height-over22 {
+  height: 540px;
+}
+
+.margin_box {
+  margin-top: -10% !important;
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 15px;
+  background: #02CDCF;
+}
+
+.timeline-container {
+  background: inherit;
+  width: 100%;
+  position: relative;
+  padding-left: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all .3s linear;
+}
+
+.timeline-container:hover {
+  background: #41414184;
+  border-radius: 16px;
+}
+
+.timeline-container:hover::after {
+  width: 30px;
+  height: 30px;
+  left: -10px;
+}
+
+.content {
+  position: relative;
+}
+
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: -8px;
+  background-color: white;
+  border: 4px solid #fff;
+  top: 50%;
+  border-radius: 50%;
+  z-index: 1;
+  transition: all .3s linear;
+}
+
+div ::-webkit-scrollbar {
+  display: none;
+}
+
+/* Footer */
+
+.circle_right3{
+  top: -25%;
+  right: 0;
+}
+
+.Footer_Moon {
+  background-image: url(./assets/image/png/Footer_moon.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+
+.line_footer {
+  border-radius: 16px;
+  opacity: 0.4;
+  background: var(--white, #FCFCFC);
+  height: 2px;
+}
+
+@media (min-width:768px) {
+  .fs-md-2xl {
+    font-size: var(--fs-2xl);
+  }
+
+  .fs-md-xl {
+    font-size: var(--fs-xl);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width:992px) {
+  .width-lg-100 {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .overflow_hidden {
+    overflow: hidden;
   }
+
+  .nav_sm {
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #252B42;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition: all 500ms linear;
+  }
+
+  .nav_show {
+    left: 0;
+  }
+
+  .close_nav {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+
+  :root {
+    --fs-2xl: 40px;
+  }
+
 }
