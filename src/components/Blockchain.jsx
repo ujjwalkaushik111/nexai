@@ -180,7 +180,7 @@ const Blockchain = () => {
       <div className="position-absolute circle_right d-sm-block d-none ">
       <img src={circle_right} alt="#" />
       </div>
-      <div className="overflow-hidden py-5"data-aos="fade-left" data-aos-duration="1000">
+      <div className="overflow-hidden py-5"data-aos="zoom-in" data-aos-duration="3000">
         <h2 className="fw-bold fs-xl sky-green text-center ff-recharge">
           Blockchain & AI technology
         </h2>

@@ -6,7 +6,7 @@ import circle_right from '../assets/image/png/Haff_img_right.png'
 
 const Nexai = () => {
   return (
-    <section className="bg-black px-5 py-5"id="About">
+    <section className="bg-black px-5 py-5 overflow-hidden"id="About">
       <Container fluid className="bg_nexai p-md-5 p-0">
         <Container>
           <Row>
@@ -30,7 +30,7 @@ const Nexai = () => {
               </p>
               <button className="Button_F">Learn More</button>
             </Col>
-            <Col lg={6} className="mt-5 d-flex justify-content-lg-end"data-aos="fade-left" data-aos-duration="2000">
+            <Col lg={6} className="mt-5 d-flex justify-content-lg-end"data-aos="zoom-in" data-aos-duration="2000">
               <img className="w-75" src={img_AI} alt="#" />
             </Col>
           </Row>

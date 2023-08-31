@@ -27,7 +27,7 @@ const Footer = () => {
         </Container>
         <Container className='py-4'>
             <Row>
-                <Col lg={6} className='mt-4'data-aos="fade-up-right"data-aos-duration="2000">
+                <Col lg={6} className='mt-4'data-aos>
                     <p className='fs-xsm text_ffffff fw-bold opacity ff-recharge'>Nullam viverra natoque amet et <span className='d-block'> sed scelerisque viverra fringilla</span> platea. Ullamcorper.</p>
                     <div className='gap-2 d-flex'>
                      <a href="https://facebook.com/"><img src={FB} alt="#" /></a>
@@ -35,7 +35,7 @@ const Footer = () => {
                      <a href="https://telegram.com/"><img src={Telegram} alt="#" /></a>
                      </div>
                 </Col>
-                <Col lg={6} className='mt-4 mt-lg-0'data-aos="fade-up-left"data-aos-duration="2000">
+                <Col lg={6} className='mt-4 mt-lg-0'>
                     <Row className=' align-items-start justify-content-lg-end '>
                         <Col sm={4} xs={6}>
                         <h1 className='text_ffffff fw-bold fs-sm ff-recharge'>Quick links</h1>

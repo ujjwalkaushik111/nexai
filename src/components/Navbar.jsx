@@ -12,7 +12,7 @@ const Navbar = () => {
         document.body.classList.add('overflow_hidden')
     }
   return (
-    <section className='Hero_img'>
+    <section className='Hero_img min-vh-100 flex-column d-flex '>
         <header className='pt-3'>
         <Container>
                     <nav className='d-flex align-items-center justify-content-between'>
@@ -34,15 +34,17 @@ const Navbar = () => {
                     </nav>
                 </Container>
         </header>
-        <Container>
-        <h1 className='fs-2xl text_ffffff fw-bold pt-4 ff-recharge '>
+        <div className='d-flex align-items-center flex-grow-1'>
+            <Container>
+            <div className='ms-sm-5 ps-sm-5'>
+                 <h1 className='fs-2xl text_ffffff fw-bold pt-4 ff-recharge '>
                    <span className='sky-green'>Nexai</span> is an <span className='d-lg-block'>advanced AI-</span>powered home <span className='d-lg-block'>assistant</span>
                 </h1>
                 <p className='text_ffffff fs-xsm ff-poppins fw-normal '>Etiam viverra nec libero a. A id id tempus molestie sed. Fringilla odio.</p>
-                <button className='Button_F mt-4'>Know More</button> 
-       
-        </Container>
-       
+                <button className='Button_F mt-5'>Know More</button> 
+            </div>
+            </Container>
+       </div>
     </section>
   )
 }
